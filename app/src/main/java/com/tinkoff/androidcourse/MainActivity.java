@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     private List<Worker> mWorkerList;
     private List<Worker> mOldWorkerList;
     private WorkerAdapter mWorkerAdapter;
-    private CalculationDiffUtil mCalculationDiffUtil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void update() {
         DiffUtilCallback diffUtilCallback = new DiffUtilCallback(mOldWorkerList, mWorkerList);
-        mCalculationDiffUtil = new CalculationDiffUtil();
-        mCalculationDiffUtil.execute(diffUtilCallback);
+        CalculationDiffUtil calculationDiffUtil = new CalculationDiffUtil();
+        calculationDiffUtil.execute(diffUtilCallback);
     }
 
     private class WorkerHolder extends RecyclerView.ViewHolder {
