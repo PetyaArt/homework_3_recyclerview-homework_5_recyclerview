@@ -28,13 +28,13 @@ public class DiffUtilCallback extends DiffUtil.Callback {
     public boolean areItemsTheSame(int i, int i1) {
         Worker oldWorker = oldList.get(i);
         Worker newWorker = newList.get(i1);
-        return oldWorker.getId() == newWorker.getId();
+        return oldWorker.getName().equals(newWorker.getName());
     }
 
     @Override
     public boolean areContentsTheSame(int i, int i1) {
         Worker oldWorker = oldList.get(i);
         Worker newWorker = newList.get(i1);
-        return oldWorker.getName().equals(newWorker.getName()) && oldWorker.getAge().equals(newWorker.getAge());
+        return oldWorker.getPosition().equals(newWorker.getPosition()) && oldWorker.getAge().equals(newWorker.getAge());
     }
 }

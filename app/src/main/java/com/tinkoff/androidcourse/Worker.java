@@ -1,8 +1,5 @@
 package com.tinkoff.androidcourse;
 
-import android.support.annotation.NonNull;
-import android.support.v7.util.DiffUtil;
-
 public class Worker {
     private int id;
     private String name;
@@ -50,5 +47,4 @@ public class Worker {
     public void setPosition(String position) {
         this.position = position;
     }
-
 }

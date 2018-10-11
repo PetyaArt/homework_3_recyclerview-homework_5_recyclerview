@@ -11,7 +11,7 @@ public class WorkerGenerator {
     private static List<String> surnames = new ArrayList<>(Arrays.asList("Green", "Smith", "Taylor", "Brown", "Wilson", "Walker", "White", "Jackson", "Wood"));
     private static List<Integer> femalePhoto = new ArrayList<>(Arrays.asList(R.drawable.ic_female_black, R.drawable.ic_female_green, R.drawable.ic_female_red, R.drawable.ic_female_magnetta));
     private static List<Integer> malePhoto = new ArrayList<>(Arrays.asList(R.drawable.ic_male_black, R.drawable.ic_male_green, R.drawable.ic_male_red, R.drawable.ic_male_magnetta));
-    private static List<String> positions = new ArrayList<>(Arrays.asList("Android programmer", "iOs programmer", "Web programmer", "Designer"));
+    private static List<String> positions = new ArrayList<>(Arrays.asList("Android programmer", "IOS programmer", "Web programmer", "Designer"));
 
     public static Worker generateWorker() {
         Worker worker = new Worker();
@@ -49,4 +49,5 @@ public class WorkerGenerator {
         }
         return workers;
     }
+
 }

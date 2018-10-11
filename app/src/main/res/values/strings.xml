@@ -3,4 +3,8 @@
     <string name="name">name</string>
     <string name="age">age</string>
     <string name="photo">photo</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_positions">Sort by positions</string>
+    <string name="sort_by_age">Sort by age</string>
+    <string name="positions">Positions</string>
 </resources>
